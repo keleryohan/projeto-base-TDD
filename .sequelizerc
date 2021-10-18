@@ -1,0 +1,11 @@
+const path = require("path");
+
+//definindo os paths dos arquivos de configuração. como os criados ao dar init no sequelize
+module.exports = {
+  //o arquivo gerado config.json teve o nome alterado para database.js
+  //ficando assim o caminho src/config/database.js - os outros seguem o mesmo padrão
+  config: path.resolve("src", "config", "database.js"),
+  "models-path": path.resolve("src", "app", "models"),
+  "seeders-path": path.resolve("src", "database", "seeders"),
+  "migrations-path": path.resolve("src", "database", "migrations"),
+};
